@@ -3,6 +3,9 @@ body {
   margin: auto, 0;
 }
 
+.hidden {
+  display: none;
+}
 .container {
   margin: auto, 0;
   width: 900px;
