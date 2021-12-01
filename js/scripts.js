@@ -8,3 +8,8 @@ Account.prototype.deposit = function(funds) {
   this.balance += funds;
   return this.balance;
 }
+
+Account.prototype.withdrawl = function (funds) {
+  this.balance -= funds;
+  return this.balance;
+}
