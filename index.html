@@ -8,14 +8,34 @@
   <script src="js/scripts.js"></script>
 </head>
 <body>
-  <h1>Bank Account</h1>
-  <form id="account-form">
-    <label for=""></label>
-    <input type="text">
-  </form>
-  <form id="diposit-withdrawl-form">
-    <label for=""></label>
-    <input type="text">
-  </form>
+  <div class="container">
+    <h1>Bank Account</h1>
+    <div id="form-1-container" class="form-container">
+      <form id="account-form" class="">
+        <div class="form-group">
+        <label for="name">Name</label>
+        <input id="name-input" class="form-control" type="text">
+        </div>
+        <div class="form-group">
+          <label for="initial-deposit-input">Intial Deposit</label>
+          <input id="initial-deposit-input" class="form-control" type="text">
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+    <div id="form-2-container" class="form-container">
+      <form id="diposit-withdrawl-form">
+        <div class="form-group">
+          <label for="withdrawl-input">Withdrawl Amount</label>
+          <input id="withdrawl-input" class="form-control" type="text">
+        </div>
+        <div class="form-group">
+          <label for="diposit-input">Diposit Amount</label>
+          <input id="diposit-input" class="form-control" type="text">
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+  </div>
 </body>
 </html>

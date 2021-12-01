@@ -1,0 +1,22 @@
+body {
+  box-sizing: border-box;
+  margin: auto, 0;
+}
+
+.container {
+  margin: auto, 0;
+  width: 900px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.form-container {
+  float: left;
+  width: 40%;
+  margin: 30px;
+  padding: 15px;
+  border: solid rgb(116, 78, 78) 2px;
+  background-color: rgb(193, 224, 178);
+}
