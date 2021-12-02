@@ -1,7 +1,7 @@
 // Business Logic for BankAccount ------
-function Account(balance, name) {
-  this.balance = balance;
-  this.name = name;
+function Account(balance, userName) {
+  this.balance: balance;
+  this.userName: userName;
 }
 
 Account.prototype.deposit = function(funds) {
@@ -9,9 +9,21 @@ Account.prototype.deposit = function(funds) {
   return this.balance;
 }
 
-Account.prototype.withdrawl = function (funds) {
+Account.prototype.withdrawal = function (funds) {
   this.balance -= funds;
   return this.balance;
 }
 
-pecurran@hotmail.com  
+$(document).ready(function() {
+  $("#account-form").submit(function(event) {
+    event.preventDefault();
+    let userName = $("#name-input").val();
+    let balance = $("#initial-deposit-input").val();
+    let newAccount = new Account(balance, userName);
+    console.log(userName);
+
+  });
+
+
+
+});
