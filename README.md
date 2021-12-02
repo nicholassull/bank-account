@@ -1,22 +1,26 @@
 # _Title_
 
-#### By _**Nick Sullivan**_
+#### By _**Nick Sullivan and Phil Curran**_
 
-#### _Short description_
+#### _A webpage that simulates a bank account._
 
 ## Technologies Used
 
-* __
+* _HTML_
+* _CSS_
+* _JavaScript_
+* _Bootstrap_
+* _jQuery_
 
 ## Description
 
-__
+_This webpage allows a user to create a bank account object that contains their name and an account balance. The account information will be displayed below the forms. There is also a form for withdrawing funds and depositing funds once an account has been created. If there is no account created, an alert will be displayed. This project was intended to showcase our beginner-level understanding of objects in Javascript._
 
 ## Setup Instructions
 
 * _Open your terminal and navigate to the folder you'd like to download the files into._
 * _Run the command below_
-> git clone https://github.com/nicholassull/portfolio-landing
+> git clone https://github.com/nicholassull/bank-account
 * _Open index.html_
 
 
@@ -26,7 +30,7 @@ __
 
 ## License
 
-Copyright (c) _10/27/2021_ _by Nick Sullivan_
+Copyright (c) _12/01/2021_ _by Nick Sullivan and Phil Curran
 
 
 _Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:_
