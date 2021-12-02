@@ -32,7 +32,6 @@ $(document).ready(function() {
     console.log(newAccount);
   });
 
-
   $("#deposit-withdrawl-form").submit(function(event) {
     event.preventDefault();
     let withdrawalAmount = $("#withdrawl-input").val();
