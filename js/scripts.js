@@ -42,12 +42,16 @@ $(document).ready(function() {
         newAccount.deposit(depositAmount);
       }
       if (!isNaN(withdrawalAmount)) {
-        newAccount.withdrawal(withdrawalAmount);
+        if(newAccount.balance - withdrawalAmount < 0) {
+          alert('You don\'t have enough in your balance to withdraw your desired amount.');
+        } else {
+          newAccount.withdrawal(withdrawalAmount);
+        }
       }
 
       $("#account-balance").html(newAccount.balance);
       } else {
-        alert("An account must be created before you can withdrawal or diposit funds.")
+        alert("An account must be created before you can withdrawal or deposit funds.")
         $("#withdrawl-input").val('');
         $("#deposit-input").val('');
       }
