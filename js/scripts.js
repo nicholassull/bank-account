@@ -14,6 +14,8 @@ Account.prototype.withdrawal = function (funds) {
   return this.balance;
 }
 
+let accountCreated = false;
+
 $(document).ready(function() {
   $("#account-form").submit(function(event) {
     event.preventDefault();
@@ -25,21 +27,30 @@ $(document).ready(function() {
     $("#info-display").removeClass('hidden');
     $("#account-name").html(userName);
     $("#account-balance").html(balance);
+    accountCreated = true;
   });
 
   $("#deposit-withdrawl-form").submit(function(event) {
     event.preventDefault();
-    let withdrawalAmount = parseInt($("#withdrawl-input").val());
-    let depositAmount = parseInt($("#deposit-input").val());
-    $("#withdrawl-input").val('');
-    $("#deposit-input").val('');
-    if (!isNaN(depositAmount)) {
-      newAccount.deposit(depositAmount);
-    }
-    if (!isNaN(withdrawalAmount)) {
-      newAccount.withdrawal(withdrawalAmount);
-    }
-    $("#account-balance").html(newAccount.balance);
+    if (accountCreated) {
+      let withdrawalAmount = parseInt($("#withdrawl-input").val());
+      let depositAmount = parseInt($("#deposit-input").val());
+      $("#withdrawl-input").val('');
+      $("#deposit-input").val('');
+
+      if (!isNaN(depositAmount)) {
+        newAccount.deposit(depositAmount);
+      }
+      if (!isNaN(withdrawalAmount)) {
+        newAccount.withdrawal(withdrawalAmount);
+      }
+
+      $("#account-balance").html(newAccount.balance);
+      } else {
+        alert("An account must be created before you can withdrawal or diposit funds.")
+        $("#withdrawl-input").val('');
+        $("#deposit-input").val('');
+      }
   });
 
 });
