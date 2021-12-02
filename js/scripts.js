@@ -22,11 +22,9 @@ $(document).ready(function() {
     newAccount = new Account(balance, userName);
     $("#name-input").val('');
     $("#initial-deposit-input").val('');
-
     $("#info-display").removeClass('hidden');
     $("#account-name").html(userName);
     $("#account-balance").html(balance);
-    
   });
 
   $("#deposit-withdrawl-form").submit(function(event) {
@@ -35,23 +33,13 @@ $(document).ready(function() {
     let depositAmount = parseInt($("#deposit-input").val());
     $("#withdrawl-input").val('');
     $("#deposit-input").val('');
-
     if (!isNaN(depositAmount)) {
       newAccount.deposit(depositAmount);
     }
-
     if (!isNaN(withdrawalAmount)) {
       newAccount.withdrawal(withdrawalAmount);
     }
-
     $("#account-balance").html(newAccount.balance);
-
-    console.log(withdrawalAmount);
-    console.log(depositAmount);
-    console.log(newAccount.balance);
-
   });
-
-
 
 });
