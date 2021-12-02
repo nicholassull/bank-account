@@ -33,8 +33,8 @@ $(document).ready(function() {
     event.preventDefault();
     let withdrawalAmount = parseInt($("#withdrawl-input").val());
     let depositAmount = parseInt($("#deposit-input").val());
-    $("#withdrawl-input").html('');
-    $("#deposit-input").html('');
+    $("#withdrawl-input").val('');
+    $("#deposit-input").val('');
 
     if (!isNaN(depositAmount)) {
       newAccount.deposit(depositAmount);
