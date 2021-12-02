@@ -16,10 +16,26 @@ h1 {
 }
 
 .form-container {
-  float: left;
-  width: 40%;
-  margin: 30px;
+  /* float: left;
+  width: 40%; */
+  /* margin: 30px; */
   padding: 15px;
   border: solid rgb(116, 78, 78) 2px;
   background-color: rgb(193, 224, 178);
+}
+
+.account-container {
+  height: 100px;
+  padding: 15px;
+  margin: 20px 0px;
+  border: solid rgb(116, 78, 78) 2px;
+  background-color: rgb(193, 224, 178);
+}
+
+
+#account-name, #account-balance {
+  background: #fff;
+  border: 1px solid black;
+  border-radius: 2px;
+  padding: 4px 25px;
 }

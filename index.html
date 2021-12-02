@@ -10,37 +10,51 @@
 <body>
   <div class="container">
     <h1>Bank Account</h1>
-    <div id="form-1-container" class="form-container">
-      <form id="account-form" class="">
-        <div class="form-group">
-        <label for="name">Name</label>
-        <input id="name-input" class="form-control" type="text">
+
+    <div class="row">
+
+      <div class='col-md-6'>
+        <div id="form-1-container" class="form-container">
+          <form id="account-form" class="">
+            <div class="form-group">
+            <label for="name">Name</label>
+            <input id="name-input" class="form-control" type="text">
+            </div>
+            <div class="form-group">
+              <label for="initial-deposit-input">Intial Deposit</label>
+              <input id="initial-deposit-input" class="form-control" type="text">
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
         </div>
-        <div class="form-group">
-          <label for="initial-deposit-input">Intial Deposit</label>
-          <input id="initial-deposit-input" class="form-control" type="text">
+      </div>
+
+      <div class='col-md-6'>
+        <div id="form-2-container" class="form-container">
+          <form id="diposit-withdrawl-form">
+            <div class="form-group">
+              <label for="withdrawl-input">Withdrawal Amount</label>
+              <input id="withdrawl-input" class="form-control" type="text">
+            </div>
+            <div class="form-group">
+              <label for="diposit-input">Deposit Amount</label>
+              <input id="diposit-input" class="form-control" type="text">
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
         </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
-      </form>
+      </div>
     </div>
-    <div id="form-2-container" class="form-container">
-      <form id="diposit-withdrawl-form">
-        <div class="form-group">
-          <label for="withdrawl-input">Withdrawl Amount</label>
-          <input id="withdrawl-input" class="form-control" type="text">
+
+    <div class="row account-container">
+      <div class="col-md-12">
+        <div id="info-display" class="hidden">
+          <p>Name: <span id="account-name"></span></p>
+          <p>Balance: <span id="account-balance"></span></p>
         </div>
-        <div class="form-group">
-          <label for="diposit-input">Diposit Amount</label>
-          <input id="diposit-input" class="form-control" type="text">
-        </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
-      </form>
+      </div>
     </div>
-    <div id="info-display" class="hidden">
-      <p>Name: <span id="account-name"></span></p>
-      <p>Balance: <span id="account-balance"></span></p>
-      <p></p>
-    </div>
+
   </div>
 </body>
 </html>
